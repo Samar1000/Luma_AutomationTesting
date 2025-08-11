@@ -1,0 +1,12 @@
+{
+  "valid email": "maxi@example.com",
+  "Existent email": "sa2200025@gmail.com",
+  "valid password": "Iti_2025",
+  "first name": "Maxi" ,
+  "last name": "Fox",
+  "password 6 digit":  "5674It",
+  "wrong confirm pass": "iti-3260",
+  "invalid email": "sa2200efef02@gmail.com",
+  "invalid password format": "iti345219",
+  "invalid email format": "safegsedbb"
+}

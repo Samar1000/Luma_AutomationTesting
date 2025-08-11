@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Features Tests" verbose="1" parallel="false" >
+    <listeners>
+        <listener class-name="listeners.MyListeners"/>
+    </listeners>
+    <test  name="Features tests" parallel="false">
+        <classes>
+            <class name="tests.featuresTest.SignInTest"/>
+            <class name="tests.featuresTest.CreateAnAccountTest"/>
+            <class name="tests.featuresTest.ForgotPasswordTest"/>
+            <class name="tests.featuresTest.CartTests"/>
+            <class name="tests.featuresTest.SearchTest"/>
+            <class name="tests.featuresTest.WomenTopsTest"/>
+            <class name="tests.featuresTest.ShippingTest"/>
+            <class name="tests.featuresTest.PaymentTest"/>
+            <class name="tests.featuresTest.ProductTest"/>
+            <class name="tests.featuresTest.SignOutTest"/>
+        </classes>
+    </test>
+</suite>

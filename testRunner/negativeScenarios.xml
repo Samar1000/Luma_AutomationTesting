@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Negative Scenarios" verbose="1" parallel="false" >
+    <listeners>
+        <listener class-name="listeners.MyListeners"/>
+    </listeners>
+    <test  name="Negative Scenario" parallel="false">
+        <groups>
+            <run>
+                <exclude name="Positive Scenarios"/>
+                <include name="Negative Scenarios"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.endToEndTest.End2EndTest"/>
+        </classes>
+    </test>
+</suite>

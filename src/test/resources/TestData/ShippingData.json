@@ -1,0 +1,24 @@
+{
+  "email": "jordan.miles1@example.com",
+  "firstName": "Jordan",
+  "lastName": "Miles",
+  "company": "TechNova Solutions",
+  "address": {
+    "street": {
+      "line1": "742 Evergreen Terrace",
+      "line2": "Suite 5B",
+      "line3": "Building C"
+    },
+    "city": "Springfield",
+    "state": "Texas",
+    "zip": "62704",
+    "country": "United States"
+  },
+  "phone": "+1-312-555-0198",
+  "shippingMethods": [
+    {
+      "method1": "Flat Rate",
+      "method2": "Best Way"
+    }
+  ]
+}
