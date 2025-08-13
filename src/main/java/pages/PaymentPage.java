@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utility.Utility;
 
 import java.time.Duration;
 
@@ -13,7 +14,7 @@ public class PaymentPage {
     private WebDriverWait wait;
     public PaymentPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private By paymentAddressCheckbox = By.id("billing-address-same-as-shipping-checkmo");
     private By placeOrderButton = By.cssSelector("button.action.primary.checkout");
@@ -25,12 +26,14 @@ public class PaymentPage {
     private By shippingAmount = By.cssSelector("span.price[data-th='Shipping']");
     private By orderTotalAmount = By.cssSelector("td.amount[data-th='Order Total'] span.price");
     public void choosePayment() {
+        Utility.waitForOverlayToDisappear(driver);
         WebElement checkbox = wait.until(ExpectedConditions.presenceOfElementLocated(paymentAddressCheckbox));
         if (!checkbox.isSelected()) {
             checkbox.click();
         }
     }
     public void clickPlaceOrderBtn() {
+        Utility.waitForOverlayToDisappear(driver);
         wait.until((ExpectedConditions.visibilityOfElementLocated(placeOrderButton)));
         wait.until(ExpectedConditions.elementToBeClickable(placeOrderButton)).click();
     }

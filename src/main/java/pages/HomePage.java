@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -17,7 +18,7 @@ public class HomePage {
     private WebDriverWait wait;
     public HomePage(WebDriver driver) {
         this.driver=driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private By signInHyperLink = By.cssSelector("a[href*='customer/account/login']");
     private By createAnAccountHyperLink = By.cssSelector("a[href*='customer/account/create']");
@@ -53,7 +54,6 @@ public class HomePage {
     }
     public void clickCartIcon(){
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(cartItemsCount, "0")));
-        Utility.waitForSeconds(1);
         wait.until(ExpectedConditions.elementToBeClickable(cartIcon)).click();
     }
     public void clickSignOutHyperLink(){
@@ -67,12 +67,6 @@ public class HomePage {
     }
     public void clearSearchField(){
         driver.findElement(searchInput).clear();
-    }
-    public String getCatItemsCount(){
-        return driver.findElement(cartItemsCount).getText().trim();
-    }
-    public void clickProductOne(){
-        driver.findElement(teeProduct).click();
     }
     public void clickWomenTops(){
         Actions actions = new Actions(driver);
@@ -99,17 +93,24 @@ public class HomePage {
         driver.findElement(colorSelector).click();
         driver.findElement(addToCartButton).click();
     }
+    public void clickCheckoutButton() {
+        try {
+            WebElement button = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
+            button.click();
+        } catch (TimeoutException e) {
+            clickCartIcon();
+            WebElement button = wait.until(ExpectedConditions.elementToBeClickable(checkoutButton));
+            button.click();
+        }
+    }
     public void openCart(){
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(cartItemsCount, "0")));
+        Utility.waitForSeconds(2);
         driver.findElement(cartIcon).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(viewAndEditCart)).click();
     }
     public String getCartMessage(){
         return driver.findElement(cartMessage).getText().trim();
-    }
-    public void clickCheckoutButton(){
-        wait.until(ExpectedConditions.presenceOfElementLocated(checkoutButton));
-        wait.until(ExpectedConditions.elementToBeClickable(checkoutButton)).click();
     }
     public WomenTeesPage navigateToTees() {
         Actions actions = new Actions(driver);

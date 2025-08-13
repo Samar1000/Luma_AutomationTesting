@@ -1,0 +1,49 @@
+[INFO] 13-08-2025 02:17:58 [main] [listeners.MyListeners] - TC2_invalidPassword Test is successful
+[INFO] 13-08-2025 02:18:14 [main] [listeners.MyListeners] - TC3_invalidEmail Test is successful
+[INFO] 13-08-2025 02:18:14 [main] [listeners.MyListeners] - TC5_invalidEmailFormat Test is successful
+[INFO] 13-08-2025 02:18:15 [main] [listeners.MyListeners] - TC6_blankFieldsError Test is successful
+[INFO] 13-08-2025 02:18:17 [main] [listeners.MyListeners] - TC1_validSignIn Test is successful
+[INFO] 13-08-2025 02:18:33 [main] [tests.featuresTest.CreateAnAccountTest] - Navigating to Create Account page
+[INFO] 13-08-2025 02:18:45 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC2: Blank Fields Error
+[INFO] 13-08-2025 02:18:46 [main] [listeners.MyListeners] - TC2_blankFieldsErrorSignUp Test is successful
+[INFO] 13-08-2025 02:18:46 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC3: Invalid Email Format
+[INFO] 13-08-2025 02:18:47 [main] [listeners.MyListeners] - TC3_invalidEmailErrorSignUp Test is successful
+[INFO] 13-08-2025 02:18:47 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC5: Password Too Short
+[INFO] 13-08-2025 02:18:47 [main] [listeners.MyListeners] - TC5_checkErrorForPasswordLengthSignUp Test is successful
+[INFO] 13-08-2025 02:18:47 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC6: Invalid Password Format
+[INFO] 13-08-2025 02:18:47 [main] [listeners.MyListeners] - TC6_checkErrorForInvalidPasswordFormatSignUp Test is successful
+[INFO] 13-08-2025 02:18:47 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC7: Mismatched Confirm Password
+[INFO] 13-08-2025 02:18:48 [main] [listeners.MyListeners] - TC7_checkErrorForMisMatchedConfirmPasswordSignUp Test is successful
+[INFO] 13-08-2025 02:18:48 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC4: Email Already Exists
+[INFO] 13-08-2025 02:18:53 [main] [listeners.MyListeners] - TC4_emailExistsErrorSignUp Test is successful
+[INFO] 13-08-2025 02:18:53 [main] [tests.featuresTest.CreateAnAccountTest] - Running TC1: Valid Sign Up
+[INFO] 13-08-2025 02:18:57 [main] [listeners.MyListeners] - TC1_validSignUp Test is successful
+[INFO] 13-08-2025 02:18:57 [main] [tests.featuresTest.CreateAnAccountTest] - Closing browser
+[INFO] 13-08-2025 02:19:17 [main] [listeners.MyListeners] - TC2_invalidBlankEmail Test is successful
+[INFO] 13-08-2025 02:19:17 [main] [listeners.MyListeners] - TC1_invalidEmailFormat Test is successful
+[INFO] 13-08-2025 02:19:26 [main] [listeners.MyListeners] - TC1_validEmail Test is successful
+[INFO] 13-08-2025 02:19:53 [main] [listeners.MyListeners] - TC1_itemAddedToCart Test is successful
+[INFO] 13-08-2025 02:19:57 [main] [listeners.MyListeners] - TC2_discountAppliedFor4OrMoreItemsInCart Test is successful
+[INFO] 13-08-2025 02:19:59 [main] [listeners.MyListeners] - TC3_emptyCartMsg Test is successful
+[INFO] 13-08-2025 02:20:13 [main] [tests.featuresTest.SearchTest] - Validate correct product list
+[INFO] 13-08-2025 02:20:13 [main] [tests.featuresTest.SearchTest] - Validate search url
+[INFO] 13-08-2025 02:20:13 [main] [listeners.MyListeners] - TC1_validSearch Test is successful
+[INFO] 13-08-2025 02:20:16 [main] [tests.featuresTest.SearchTest] - Validate search for non existing products return nothing
+[INFO] 13-08-2025 02:20:16 [main] [listeners.MyListeners] - TC2_NoResultSearch Test is successful
+[INFO] 13-08-2025 02:20:52 [main] [listeners.MyListeners] - TC1_SortByPriceAsc Test is successful
+[INFO] 13-08-2025 02:20:54 [main] [listeners.MyListeners] - TC2_SortByProductNameAsc Test is successful
+[INFO] 13-08-2025 02:20:57 [main] [listeners.MyListeners] - TC3_SortByPriceDesc Test is successful
+[INFO] 13-08-2025 02:20:59 [main] [listeners.MyListeners] - TC4_SortByProductNameDesc Test is successful
+[INFO] 13-08-2025 02:21:34 [main] [pages.ShippingPage] - Email field filled with: jordan.miles1@example.com
+[INFO] 13-08-2025 02:21:40 [main] [listeners.MyListeners] - TC1_enterValidAddress Test is successful
+[INFO] 13-08-2025 02:22:13 [main] [pages.ShippingPage] - Email field filled with: jordan.miles1@example.com
+[INFO] 13-08-2025 02:22:14 [main] [tests.featuresTest.PaymentTest] - Choosing payment method...
+[INFO] 13-08-2025 02:22:17 [main] [tests.featuresTest.PaymentTest] - Applying discount code: 20Poff
+[INFO] 13-08-2025 02:22:22 [main] [tests.featuresTest.PaymentTest] - Validating discount is applied
+[INFO] 13-08-2025 02:22:22 [main] [listeners.MyListeners] - TC2_ApplyDiscount Test is successful
+[INFO] 13-08-2025 02:22:31 [main] [listeners.MyListeners] - TC1_ChoosePayment Test is successful
+[INFO] 13-08-2025 02:22:52 [main] [listeners.MyListeners] - TC3_notChoosingSizeAndColor Test is successful
+[INFO] 13-08-2025 02:22:57 [main] [listeners.MyListeners] - TC1_outOfStockItem Test is successful
+[INFO] 13-08-2025 02:22:57 [main] [listeners.MyListeners] - TC2_qtySetToZero Test is successful
+[INFO] 13-08-2025 02:23:02 [main] [listeners.MyListeners] - TC3_wishListForGuests Test is successful
+[INFO] 13-08-2025 02:23:36 [main] [listeners.MyListeners] - TC1_signOut Test is successful

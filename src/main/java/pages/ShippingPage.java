@@ -12,7 +12,7 @@ public class ShippingPage {
     private WebDriverWait wait;
     public ShippingPage(WebDriver driver) {
         this.driver = driver;
-        this.wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+        this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private By emailField =  By.id("customer-email");
     private By firstNameField = By.cssSelector("input.input-text[name='firstname']:not([disabled])");

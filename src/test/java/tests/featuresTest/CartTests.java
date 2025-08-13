@@ -1,6 +1,5 @@
 package tests.featuresTest;
 import tests.base.BaseDriver;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.CartPage;

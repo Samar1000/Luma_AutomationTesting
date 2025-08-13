@@ -1,0 +1,36 @@
+[INFO] 13-08-2025 02:26:16 [main] [tests.endToEndTest.End2EndTest] - Open home page
+[INFO] 13-08-2025 02:26:25 [main] [tests.endToEndTest.End2EndTest] - End to end Guest scenario test
+[INFO] 13-08-2025 02:26:25 [main] [tests.endToEndTest.End2EndTest] - add item to cart
+[INFO] 13-08-2025 02:26:25 [main] [tests.endToEndTest.End2EndTest] - open cart
+[INFO] 13-08-2025 02:26:31 [main] [tests.endToEndTest.End2EndTest] - Go to Checkout
+[INFO] 13-08-2025 02:26:36 [main] [tests.endToEndTest.End2EndTest] - Fill shipping address
+[INFO] 13-08-2025 02:26:37 [main] [pages.ShippingPage] - Email field filled with: jordan.miles1@example.com
+[INFO] 13-08-2025 02:26:42 [main] [tests.endToEndTest.End2EndTest] - Navigate to payment page and choose payment method
+[INFO] 13-08-2025 02:26:45 [main] [tests.endToEndTest.End2EndTest] - Place order
+[INFO] 13-08-2025 02:26:48 [main] [tests.endToEndTest.End2EndTest] - End of Guest scenario
+[INFO] 13-08-2025 02:26:48 [main] [listeners.MyListeners] - endToEndAsAGuest Test is successful
+[INFO] 13-08-2025 02:26:49 [main] [tests.endToEndTest.End2EndTest] - Open home page
+[INFO] 13-08-2025 02:26:58 [main] [tests.endToEndTest.End2EndTest] - End to end new user scenario test
+[INFO] 13-08-2025 02:26:58 [main] [tests.endToEndTest.End2EndTest] - Navigating to Create Account page
+[INFO] 13-08-2025 02:27:02 [main] [tests.endToEndTest.End2EndTest] - Fill Fields with valid data and click create an account button
+[INFO] 13-08-2025 02:27:07 [main] [tests.endToEndTest.End2EndTest] - Navigate to desired category and choose a product
+[INFO] 13-08-2025 02:27:17 [main] [tests.endToEndTest.End2EndTest] - Validate product added to cart
+[INFO] 13-08-2025 02:27:35 [main] [tests.endToEndTest.End2EndTest] - Validate cart discount was added
+[INFO] 13-08-2025 02:27:40 [main] [tests.endToEndTest.End2EndTest] - Validate adding shipping address and payment method and checking out
+[INFO] 13-08-2025 02:27:44 [main] [tests.endToEndTest.End2EndTest] - Validate order is confirmed
+[INFO] 13-08-2025 02:27:47 [main] [tests.endToEndTest.End2EndTest] - End of new user scenario
+[INFO] 13-08-2025 02:27:47 [main] [listeners.MyListeners] - endToEndAsNewUser Test is successful
+[INFO] 13-08-2025 02:27:48 [main] [tests.endToEndTest.End2EndTest] - Open home page
+[INFO] 13-08-2025 02:27:56 [main] [tests.endToEndTest.End2EndTest] - End to end old user scenario test
+[INFO] 13-08-2025 02:28:09 [main] [tests.endToEndTest.End2EndTest] - Validate correct product list
+[INFO] 13-08-2025 02:28:09 [main] [tests.endToEndTest.End2EndTest] - Validate search url
+[INFO] 13-08-2025 02:28:17 [main] [tests.endToEndTest.End2EndTest] - Validate product added to cart
+[INFO] 13-08-2025 02:28:34 [main] [tests.endToEndTest.End2EndTest] - Go to Checkout
+[INFO] 13-08-2025 02:28:55 [main] [tests.endToEndTest.End2EndTest] - Applying discount code: 20Poff
+[INFO] 13-08-2025 02:28:59 [main] [tests.endToEndTest.End2EndTest] - Validating discount is applied
+[INFO] 13-08-2025 02:29:00 [main] [tests.endToEndTest.End2EndTest] - Validate order is confirmed
+[INFO] 13-08-2025 02:29:05 [main] [tests.endToEndTest.End2EndTest] - Sign out
+[INFO] 13-08-2025 02:29:06 [main] [listeners.MyListeners] - endToEndAsOldUser Test failed
+[ERROR] 13-08-2025 02:29:06 [main] [listeners.MyListeners] - Failure reason: java.lang.AssertionError: The following asserts failed:
+	items sorted wrong: Lists differ at element [1]: 22.0 != 24.0 expected [22.0] but found [24.0]
+[ERROR] 13-08-2025 02:29:06 [main] [listeners.MyListeners] - 📸 Screenshot saved at: test-outputs/Logs/screenshots/endToEndAsOldUser.png

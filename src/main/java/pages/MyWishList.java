@@ -10,8 +10,8 @@ public class MyWishList {
         this.driver=driver;
     }
     private By messageLocator = By.xpath("//div[@data-bind='html: $parent.prepareMessageForHtml(message.text)']");
-    public String getWishlistMessageText(String productName) {
-        WebElement messageElement = driver.findElement(messageLocator);
-        return productName + " has been added to your Wish List. Click here to continue shopping.";
+    public String getWishlistMessageText() {
+        String messageElement = driver.findElement(messageLocator).getText().trim();
+        return messageElement;
     }
 }

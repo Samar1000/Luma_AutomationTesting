@@ -33,13 +33,6 @@ public class ShippingTest extends BaseDriver {
         Utility.waitForUrlContains(driver,"#payment");
         Assert.assertEquals(driver.getCurrentUrl(),"https://magento.softwaretestingboard.com/checkout/#payment");
     }
-//    @Test
-//    public void TC2_enterInvalidAddress(){
-//        shippingPage.
-//                      .clickNext();
-//        Utility.waitForUrlContains(driver,"#payment");
-//        Assert.assertEquals(driver.getCurrentUrl(),"https://magento.softwaretestingboard.com/checkout/#payment");
-//    }
     @AfterClass
     public void quit(){
         quitDriver();

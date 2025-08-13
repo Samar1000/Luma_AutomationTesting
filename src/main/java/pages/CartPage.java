@@ -15,7 +15,7 @@ public class CartPage {
     private WebDriverWait wait;
     public CartPage(WebDriver driver) {
         this.driver = driver;
-        wait=new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait=new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private By subtotalPrice = By.cssSelector("span.price[data-th='Subtotal']");
     private By discountPrice = By.cssSelector("td[data-th='Discount'] span.price");

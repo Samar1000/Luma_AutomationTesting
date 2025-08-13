@@ -13,7 +13,7 @@ public class CreateAnAccountPage {
     private WebDriverWait wait;
     public CreateAnAccountPage(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
     private By firstNameInput = By.id("firstname");
     private By lastNameInput = By.id("lastname");

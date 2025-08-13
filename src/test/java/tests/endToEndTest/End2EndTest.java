@@ -139,7 +139,7 @@ public class End2EndTest extends BaseDriver {
         String productTitle = productPage.getProductTitle();
         productPage.clickAddToWishlist();
         MyWishList myWishList = new MyWishList(driver);
-        softAssert.assertEquals(myWishList.getWishlistMessageText(productTitle),productTitle+" has been added to your Wish List. Click here to continue shopping.");
+        softAssert.assertEquals(myWishList.getWishlistMessageText(),productTitle+" has been added to your Wish List. Click here to continue shopping.");
         CartPage cart = new CartPage(driver);
         homePage.openCart();
         //------------remove item from cart--------------
